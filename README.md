@@ -6,7 +6,7 @@ Dans le cadre de la mise en place d’une nouvelle solution d’hébergement, no
 Prérequis
 ---------
 
-Dans le cadre de ce projet, nous avons provisionné trois machines virtuelle sur le cloud DigitalOcean.
+Nous avons provisionné trois machines virtuelle sur le cloud DigitalOcean.
 
 Chacune des ces machine virtuelle tourne sur Ubuntu 23.10 x64 et possède ces caractéristiques : 2 vCPUs - 2GB Ram / 60GB Disk
 
