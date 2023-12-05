@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hugo
+  namespace: default  # ou un autre namespace si vous le souhaitez
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hugo
+  template:
+    metadata:
+      labels:
+        app: hugo
+    spec:
+      containers:
+      - name: hugo
+        image: ndogota/hugo-site:latest
+        ports:
+        - containerPort: 80

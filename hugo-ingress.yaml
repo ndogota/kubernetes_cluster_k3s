@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hugo-ingress
+  namespace: default
+spec:
+  rules:
+  - host: hugo
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: hugo-service
+            port:
+              number: 80
